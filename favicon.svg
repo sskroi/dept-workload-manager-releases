@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <defs>
+    <linearGradient id="frame" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#214F86"/>
+      <stop offset="1" stop-color="#123C6D"/>
+    </linearGradient>
+    <linearGradient id="header" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#6E98D3"/>
+      <stop offset="1" stop-color="#4F78B2"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Outer rounded table frame -->
+  <rect x="54" y="54" width="404" height="404" rx="72" fill="url(#frame)"/>
+
+  <!-- Table surface -->
+  <rect x="78" y="78" width="356" height="356" rx="48" fill="#F8FAFD"/>
+
+  <!-- Header -->
+  <path d="M78 126a48 48 0 0 1 48-48h260a48 48 0 0 1 48 48v54H78z" fill="url(#header)"/>
+
+  <!-- Grid -->
+  <g fill="none" stroke="#B7C8DF" stroke-width="7">
+    <path d="M167 126v308"/>
+    <path d="M256 126v308"/>
+    <path d="M345 126v308"/>
+    <path d="M78 180h356"/>
+    <path d="M78 244h356"/>
+    <path d="M78 308h356"/>
+    <path d="M78 372h356"/>
+  </g>
+
+  <!-- Header separators -->
+  <g stroke="#315D94" stroke-width="7">
+    <path d="M167 78v102"/>
+    <path d="M256 78v102"/>
+    <path d="M345 78v102"/>
+  </g>
+
+  <!-- Highlighted cells -->
+  <rect x="171" y="188" width="81" height="52" rx="3" fill="#4E86D8"/>
+  <rect x="260" y="252" width="81" height="52" rx="3" fill="#58B38B"/>
+  <rect x="82" y="316" width="81" height="52" rx="3" fill="#6E98D3"/>
+  <rect x="171" y="380" width="81" height="50" rx="3" fill="#65B99A"/>
+
+  <!-- Subtle inner border -->
+  <rect x="78" y="78" width="356" height="356" rx="48" fill="none" stroke="#D7E1EF" stroke-width="3"/>
+</svg>
